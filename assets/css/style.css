@@ -1,7 +1,9 @@
+/* CSS variables */
 :root {
     --font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+/* Universal rules */
 * {
     font-family: var(--font-family);
     font-size: 16px;
@@ -9,8 +11,10 @@
 
 body {
     margin: 0;
+    background-color: gainsboro;
 }
 
+/* Adjusting Header sizes */
 h1 {
     font-size: 2rem;
 }
@@ -19,6 +23,7 @@ h2 {
     font-size: 1.75rem;
 }
 
+/* Header and nav bar styling */
 header {
     margin: 0;
     padding: 20px 0;
@@ -35,7 +40,7 @@ header h1 {
     font-weight: bolder;
 }
 
-nav {
+header nav {
     align-items: end;
     display: flex;
     margin: 0 5px 5px 0;
@@ -43,11 +48,12 @@ nav {
 }
 
 .nav-link {
-    color: cadetblue;
+    color: aqua;
     margin: 0 10px;
 
 }
 
+/* Background image styling */
 .bg-image {
     height: 400px;
     width: 100%;
@@ -67,8 +73,10 @@ nav {
     margin-right: 10px;
 }
 
+/* About Me section */
 #about-me {
     margin: 10px;
+    text-align: center;
 }
 
 #about-me h2 {
@@ -84,6 +92,7 @@ nav {
     color: darkblue;
 }
 
+/* Work section */
 #work {
     margin: 10px;
 }
@@ -93,6 +102,7 @@ nav {
     color: darkblue;
 }
 
+/* Work card styling */
 .card-container {
     display: flex;
     flex-wrap: wrap;
@@ -126,6 +136,7 @@ nav {
     flex: 1 1 90%;
 } */
 
+/* Contact Me section */
 #contact-me {
     margin: 10px;
 }
@@ -141,6 +152,7 @@ nav {
     margin: 10px;
 }
 
+/* Media Queries */
 @media screen and (max-width: 768px) {
     * {
         font-size: 12px;
