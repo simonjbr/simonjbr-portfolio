@@ -1,0 +1,137 @@
+:root {
+    --font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+* {
+    font-family: var(--font-family);
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    font-size: 200%;
+}
+
+h2 {
+    font-size: 175%;
+}
+
+header {
+    margin: 0;
+    padding: 20px 0;
+    background-color: rgb(49, 72, 112);
+    background-image: linear-gradient(rgb(49, 72, 112), rgb(50, 29, 66));
+    display: flex;
+    justify-content: space-between;
+}
+
+header h1 {
+    margin-left: 10px;
+    color: antiquewhite;
+    font-family: var(--font-family);
+    font-weight: bolder;
+}
+
+nav {
+    align-items: end;
+    display: flex;
+    margin: 0 5px 5px 0;
+    font-family: var(--font-family);
+}
+
+.nav-link {
+    color: cadetblue;
+    margin: 0 10px;
+
+}
+
+.bg-image {
+    height: 400px;
+    width: 100%;
+    margin: 0;
+    background-image: url("../images/code-bg-image.webp");
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-repeat: repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.bg-image::after {
+    content: "My cool subtitle";
+    background-color: aqua;
+    margin-right: 10px;
+}
+
+#about-me {
+    margin: 10px;
+}
+
+#about-me h2 {
+    border-bottom: 5px solid darkblue;
+    color: darkblue;
+}
+
+#about-me p {
+    color: darkblue;
+}
+
+#work {
+    margin: 10px;
+}
+
+#work h2 {
+    border-bottom: 5px solid darkblue;
+    color: darkblue;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1 1 45%;
+    border: 3px solid aqua;
+    margin: 5px;
+}
+
+.card::after {
+    position: relative;
+    padding: 5px 10px;
+    bottom: 20%;
+    content: attr(data-heading);
+    background-color: aqua;
+    margin: 10px 0;;
+    font-size: 100%;
+    /* max-width: 50%; */
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+}
+
+/* First .card in .card-container  try nth-item(1)*/
+/* .card-container + .card {
+    margin: 0;
+    flex: 1 1 90%;
+} */
+
+#contact-me {
+    margin: 10px;
+}
+
+#contact-me h2 {
+    border-bottom: 5px solid darkblue;
+    color: darkblue;
+}
+
+#contact-me nav {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+}
