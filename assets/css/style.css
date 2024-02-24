@@ -4,6 +4,7 @@
 
 * {
     font-family: var(--font-family);
+    font-size: 16px;
 }
 
 body {
@@ -11,11 +12,11 @@ body {
 }
 
 h1 {
-    font-size: 200%;
+    font-size: 2rem;
 }
 
 h2 {
-    font-size: 175%;
+    font-size: 1.75rem;
 }
 
 header {
@@ -73,6 +74,10 @@ nav {
 #about-me h2 {
     border-bottom: 5px solid darkblue;
     color: darkblue;
+}
+
+#about-me img {
+    width: 20%;
 }
 
 #about-me p {
@@ -134,4 +139,11 @@ nav {
     display: flex;
     justify-content: space-evenly;
     margin: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    * {
+        font-size: 12px;
+    }
+    
 }
